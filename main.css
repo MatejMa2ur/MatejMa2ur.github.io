@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("Fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("Fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+}
 body {
   background-color: #F9FBFD;
   margin: 0;
@@ -5,12 +13,31 @@ body {
   height: 95vh;
 }
 
-.left {
+.f1 {
+  flex: 1;
+}
+
+.f2 {
   flex: 2;
 }
 
-.right {
+.f3 {
   flex: 3;
+}
+
+.f4 {
+  flex: 4;
+}
+
+.f5 {
+  flex: 5;
+}
+
+.f6 {
+  flex: 6;
+}
+
+.ml {
   margin-left: 15px;
 }
 
@@ -69,4 +96,12 @@ body {
 
 .m0 {
   margin: 0;
+}
+
+.Bold {
+  font-family: "OpenSansBold";
+}
+
+.Light {
+  font-family: "OpenSansLight";
 }/*# sourceMappingURL=main.css.map */
