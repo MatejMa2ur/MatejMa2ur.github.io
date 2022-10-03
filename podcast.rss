@@ -37,20 +37,5 @@
             <itunes:duration>16</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
-        <item>
-            <title>IntroductionTestChange</title>
-            <description>
-                Just a simple Introduction
-            </description>
-            <enclosure
-                length="16" 
-                type="audio/x-m4a" 
-                url="http://proud-cliff-0d9c64e03.1.azurestaticapps.net/Podcasts/Intro.m4a"
-            />
-            <guid>aae20221003</guid>
-            <pubDate>Wed, 10 Aug 2022 12:00:00 GMT</pubDate>
-            <itunes:duration>16</itunes:duration>
-            <itunes:explicit>false</itunes:explicit>
-        </item>
     </channel>
 </rss>
