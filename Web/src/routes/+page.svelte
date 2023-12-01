@@ -13,6 +13,12 @@
     }
 </style>
 
+<div class="w-full h-screen absolute invisible md:visible">
+    <img src="Img/Waves/Vector.png" class="absolute bottom-0" alt="Wave1"/>
+    <img src="Img/Waves/Vector-1.png" class="absolute bottom-0" alt="Wave2"/>
+    <img src="Img/Waves/Vector-2.png" class="absolute bottom-0" alt="Wave3"/>
+</div>
+
 <div class="absolute w-full h-screen">
     <div class="container mx-auto h-screen flex flex-col md:flex-row gap-5
             md:justify-around justify-evenly items-center content-area {showCard ? 'off-screen' : ''} ">
