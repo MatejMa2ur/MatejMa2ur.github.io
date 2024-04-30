@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .centered-image {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .bg-image-1 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .bg-image-2 {
+            position: absolute;
+            height: 80%;
+            width: 80%;
+            object-fit: cover;
+        }
+        .bg-image-3 {
+            position: absolute;
+            height: 60%;
+            width: 60%;
+            object-fit: cover;
+        }
+        .black-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: radial-gradient(circle at center, transparent, rgba(0,0,0,0.7) 70%);
+            z-index: 1;
+        }
+    </style>
 </head>
-<body>
-    <h1>Hello!</h1>
-    
+<body style="margin: 0;padding: 0">
+<div class="container">
+    <img class="bg-image-1" src="img/Bg.jpeg" />
+    <img class="bg-image-2" src="img/Bg.jpeg" />
+    <img class="bg-image-3" src="img/Bg.jpeg" />
+    <div class="black-overlay"></div>
+    <img class="centered-image" src="img/LIVE.png" />
+</div>
 </body>
 </html>
