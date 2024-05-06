@@ -22,40 +22,43 @@
             z-index: 2;
             width: 40vh;
         }
-        .bg-image-1 {
+
+        .image-container {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .image-container img {
             position: absolute;
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
-        .bg-image-2 {
-            position: absolute;
-            height: 80%;
-            width: 80%;
-            object-fit: cover;
-        }
-        .bg-image-3 {
-            position: absolute;
-            height: 60%;
-            width: 60%;
-            object-fit: cover;
-        }
-        .black-overlay {
+
+        .image-container .overlay {
             position: absolute;
             height: 100%;
             width: 100%;
-            background: radial-gradient(circle at center, transparent, rgba(0,0,0,0.7) 70%);
-            z-index: 1;
+            background: radial-gradient(circle at center, transparent, rgba(21,15,2,0.8) 70%);
         }
     </style>
 </head>
 <body style="margin: 0;padding: 0">
 <div class="container">
-    <img class="bg-image-1" src="img/Bg.jpeg" />
-    <img class="bg-image-2" src="img/Bg.jpeg" />
-    <img class="bg-image-3" src="img/Bg.jpeg" />
-    <div class="black-overlay"></div>
-    <img class="centered-image" src="img/LIVE.png" />
+    <div class="image-container" style="z-index: 1;">
+        <img src="img/Bg.jpeg" />
+        <div class="overlay"></div>
+    </div>
+    <div class="image-container" style="z-index: 2; height:80%; width:80%;">
+        <img src="img/Bg.jpeg" />
+        <div class="overlay"></div>
+    </div>
+    <div class="image-container" style="z-index: 3; height:60%; width:60%;">
+        <img src="img/Bg.jpeg" />
+        <div class="overlay"></div>
+    </div>
+    <img class="centered-image" style="z-index: 4;" src="img/LIVE-yellow.png" />
 </div>
 </body>
 </html>
