@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Nordic Alternative";
-    src: url("font/nordic/Nordic Alternative Regular.ttf") format("truetype");
+    src: url("https://matejmazur.net/font/nordic/Nordic Alternative Regular.ttf") format("truetype");
 }
 
 .nordic {
