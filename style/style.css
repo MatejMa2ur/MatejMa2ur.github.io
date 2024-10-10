@@ -41,3 +41,63 @@ body[data-bs-theme="dark"] {
     --bs-emphasis-color: var(--light-200);
     --bs-secondary-color: var(--yellow);
 }
+
+.screen{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.links{
+    margin-top: 1em;
+    margin-right: 0.5em;
+}
+
+.links a{
+    width: 100%;
+    padding: 10px 2em;
+    margin: 0.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--light-300);
+    background-color: var(--bs-secondary-color);
+}
+
+/* Index.html */
+.circle-color, .person-color {
+    transition: fill 0.4s ease-out;
+}
+body{
+    transition: background-color 0.4s ease-out;
+}
+svg#theme-switcher {
+    cursor: pointer;
+}
+svg#theme-switcher {
+    width: 612px;
+    height: 600px;
+}
+
+.tilt-text h2 {
+    transition: transform 0.3s ease-out; /* Add animation for smooth transition */
+}
+/* Media query for phone screens */
+@media (max-width: 576px) {
+    .tilt-text {
+        padding-left: 0.8em;
+        padding-top: 6.5em;
+    }
+    .tilt-text h2 {
+        transform: rotate(-45deg);
+        margin-left: -0.5em;
+    }
+    svg#theme-switcher {
+        width: 400px;
+        height: 392px;
+    }
+    .hidden-right {
+        position: absolute;
+        right: -20%; /* Move element far enough to the right to hide it completely */
+        bottom: -5%;
+        width: 100%;
+    }
+}
