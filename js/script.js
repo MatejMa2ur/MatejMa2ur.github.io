@@ -7,11 +7,18 @@ const toggleTheme = () => {
     sessionStorage.setItem('theme', newTheme);
 };
 
-// Add event listener to the theme switcher button
-document.getElementById('theme-switcher').addEventListener('click', toggleTheme);
-
-// Check session storage for saved theme on page load
-window.addEventListener('DOMContentLoaded', () => {
+// Function to apply the saved theme on page load
+const applySavedTheme = () => {
     const savedTheme = sessionStorage.getItem('theme') || 'light';
     document.body.setAttribute('data-bs-theme', savedTheme);
+};
+
+// Add event listener to the theme switcher button if it exists
+document.addEventListener('DOMContentLoaded', () => {
+    applySavedTheme();
+
+    const themeSwitcher = document.getElementById('theme-switcher');
+    if (themeSwitcher) {
+        themeSwitcher.addEventListener('click', toggleTheme);
+    }
 });

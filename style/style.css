@@ -17,7 +17,9 @@ body, .nordic {
     --light-200: #ACCBE1;
     --light-300: #7C98B3;
     --yellow: #F4C244;
+    --yellow-rgb: 244, 194, 68;
     --gray: #222529;
+    --gray-rgb: 34, 37, 41;
 }
 
 html {
@@ -34,12 +36,14 @@ body[data-bs-theme="light"] {
     --bs-body-color: var(--light-300);
     --bs-emphasis-color: var(--light-200);
     --bs-secondary-color: var(--gray);
+    --bs-dark-rgb: var(--gray-rgb);
 }
 body[data-bs-theme="dark"] {
     --bs-body-bg: var(--gray);
     --bs-body-color: var(--light-300);
     --bs-emphasis-color: var(--light-200);
     --bs-secondary-color: var(--yellow);
+    --bs-dark-rgb: var(--yellow-rgb);
 }
 
 .screen{
@@ -88,6 +92,7 @@ svg#theme-switcher {
     }
     .tilt-text h2 {
         transform: rotate(-45deg);
+        margin-bottom: 0.5em;
         margin-left: -0.5em;
     }
     svg#theme-switcher {
