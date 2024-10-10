@@ -106,3 +106,40 @@ svg#theme-switcher {
         width: 100%;
     }
 }
+
+.about-me-title{
+    padding-left: 5rem
+}
+.about-me-title h2{
+    font-size: 7rem
+}
+.about-me-content{
+    padding-left: 5em;
+    padding-bottom: 3em;
+}
+.color-stripes {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+div.media div a i {
+    font-size: 4em;
+}
+@media (max-width: 576px) {
+    .about-me-title h2{
+        font-size: 5rem;
+    }
+    .about-me-title{
+        padding-left: 1rem;
+    }
+    .about-me-content{
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+    }
+    .about-me-content div h3{
+        font-size: 2rem;
+    }
+    div.media div a i {
+        font-size: 3em;
+    }
+}
