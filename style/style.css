@@ -3,8 +3,21 @@
     src: url("https://matejmazur.net/font/nordic/Nordic Alternative Regular.ttf") format("truetype");
 }
 
-.nordic {
+body, .nordic {
     font-family: "Nordic Alternative", Arial, sans-serif;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    /* My color scheme */
+    --light-100: #CEE5F2;
+    --light-200: #ACCBE1;
+    --light-300: #7C98B3;
+    --yellow: #F4C244;
+    --gray: #222529;
 }
 
 html {
@@ -16,126 +29,15 @@ html {
     user-select: none;
 }
 
-.index-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+body[data-bs-theme="light"] {
+    --bs-body-bg: var(--yellow);
+    --bs-body-color: var(--light-300);
+    --bs-emphasis-color: var(--light-200);
+    --bs-secondary-color: var(--gray);
 }
-
-.yellow {
-    background-color: rgb(244, 194, 68);
-}
-
-.centered-image {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 40vh;
-}
-
-.image-container {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.image-container img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.image-container .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: radial-gradient(circle at center, transparent, rgba(21, 15, 2, 0.8) 70%);
-}
-
-.links {
-    bottom: 2%;
-    width: 100%;
-    text-align: center;
-}
-.links a.y {
-    text-decoration: none;
-    color: rgb(244, 194, 68);
-    font-size: 1.6rem;
-}
-@media screen and (max-width: 600px) {
-    .links a.y {
-        font-size: 1rem; /* adjust this value as desired */
-    }
-}
-.links a.b {
-    text-decoration: none;
-    color: rgb(21, 15, 2);
-    font-size: 1.6rem;
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-.links a {
-    animation: fadeIn 2s;
-}
-
-
-.fade-out {
-    animation: fade-out 0.5s forwards;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-@keyframes fade-out {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-body {
-    opacity: 0; /* Start at 0 opacity when the page starts loading */
-    animation: fadeIn ease 1.5s;
-    animation-fill-mode: forwards; /* This ensures that page remains in final state of animation */
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.profile-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.bio-info {
-    flex: 0 1 70%;
-}
-
-.aside-links {
-    flex: 0 1 25%;
-}
-
-.user-image{
-    width: 250px;
-    margin-top: -125px;
-}
-
-@media only screen and (max-width: 768px) {
-    .user-image {
-        width: 180px;
-        margin-top: -90px;
-    }
+body[data-bs-theme="dark"] {
+    --bs-body-bg: var(--gray);
+    --bs-body-color: var(--light-300);
+    --bs-emphasis-color: var(--light-200);
+    --bs-secondary-color: var(--yellow);
 }
