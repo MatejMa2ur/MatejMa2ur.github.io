@@ -9,7 +9,7 @@ const toggleTheme = () => {
 
 // Function to apply the saved theme on page load
 const applySavedTheme = () => {
-    const savedTheme = sessionStorage.getItem('theme') || 'light';
+    const savedTheme = sessionStorage.getItem('theme') || 'dark';
     document.body.setAttribute('data-bs-theme', savedTheme);
 };
 
