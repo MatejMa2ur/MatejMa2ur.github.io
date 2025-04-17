@@ -1,32 +1,18 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live</title>
-    <link rel="icon" href="img/Icon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" HREF="style/style.css">
++++
+date = '2025-04-17T01:39:37+02:00'
+title = 'Projects'
++++
 
-    <style>
-        .links {
-            position: sticky;
-        }
-    </style>
-</head>
-<body class="p-0 m-0">
 <div class="projects overflow-x-hidden">
 
 <div class="screen">
     <div class="position-absolute top-0 end-0">
         <div class="d-flex flex-column links nordic">
-            <a href="index.html"
+            <a href="/"
                class="b" style="margin-right: 8%;">Home</a>
-            <a href="#"
+            <a href="/projects/"
                class="b" style="margin-right: 8%;">Projects</a>
-            <a href="about-me.html"
+            <a href="/about-me/"
                class="b">About Me</a>
         </div>
     </div>
@@ -72,7 +58,7 @@
             </h2>
         </div>
         <div class="col-sm h-100 d-flex flex-column justify-content-sm-end pe-sm-5 p-3">
-            <img src="./img/proj/htf/HTF.png" class="p-0 img-fluid"/>
+            <img src="/img/proj/htf/HTF.png" class="p-0 img-fluid"/>
         </div>
     </div>
 </div>
@@ -90,7 +76,7 @@
         </div>
 
         <div class="col-sm h-100 d-flex flex-column justify-content-end p-3 ps-5 gap-5">
-            <img src="./img/proj/y-a-s/y-a-s.png" class="p-0 img-fluid"/>
+            <img src="/img/proj/y-a-s/y-a-s.png" class="p-0 img-fluid"/>
         </div>
         <div class="col-sm h-100 d-flex flex-column justify-content-sm-end p-3 p-sm-5 gap-5 align-items-end">
             <div class="d-flex flex-row pe-sm-5">
@@ -110,11 +96,3 @@
 </div>
 
 </div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-<script src="js/script.js" type="text/javascript"></script>
-</body>
-</html>

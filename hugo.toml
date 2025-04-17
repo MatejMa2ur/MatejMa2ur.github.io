@@ -1,0 +1,7 @@
+baseURL = 'https://mmlw.net/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files

@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Live</title>
-    <link rel="icon" href="img/Icon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
++++
+date = '2025-04-16T23:43:40+02:00'
+title = 'Test'
++++
 
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Google Fonts Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" HREF="style/style.css" >
-</head>
-<body class="p-0 m-0" data-bs-theme="dark">
 <div class="screen">
     <div class="h-100 d-flex flex-column flex-sm-row align-sm-items-center">
         <div class="col-sm-6 d-flex justify-content-sm-center align-items-sm-center">
@@ -54,18 +40,12 @@
     </div>
     <div class="position-absolute top-0 end-0">
         <div class="d-flex flex-column links nordic">
-            <a href="#"
+            <a href="/"
                class="b" style="margin-right: 8%;">Home</a>
-            <a href="projects.html"
+            <a href="/projects/"
                class="b" style="margin-right: 8%;">Projects</a>
-            <a href="about-me.html"
+            <a href="/about-me/"
                class="b">About Me</a>
         </div>
     </div>
 </div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="js/script.js" type="text/javascript"></script>
-</body>
-</html>
