@@ -1,7 +1,18 @@
 baseURL = 'https://mmlw.net/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Matej Mazur | Developer & Creator'
+description = 'Personal portfolio of Matej Mazur, showcasing projects like Hack The Flag and Y-A-S, along with professional information and skills.'
+enableRobotsTXT = true
 
+[params]
+  author = "Matej Mazur"
+  description = "Personal portfolio of Matej Mazur, showcasing projects like Hack The Flag and Y-A-S, along with professional information and skills."
+  keywords = "Matej Mazur, developer, portfolio, projects, Hack The Flag, Y-A-S"
+  images = ["/img/Me.png"]
+
+  [params.social]
+    github = "https://github.com/MatejMa2ur"
+    linkedin = "https://www.linkedin.com/in/matej-mazur/"
 
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files
