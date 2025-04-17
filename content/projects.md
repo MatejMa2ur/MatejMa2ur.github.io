@@ -3,6 +3,7 @@ date = '2025-04-17T01:39:37+02:00'
 title = 'Projects | Matej Mazur'
 description = "Explore Matej Mazur's portfolio of projects including Hack The Flag, a cryptography challenge platform, and Y-A-S, a community for real-life solutions."
 keywords = "Matej Mazur, projects, portfolio, Hack The Flag, Y-A-S, developer projects"
+aliases = ['/projects.html']
 +++
 
 
