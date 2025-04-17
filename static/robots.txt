@@ -1,0 +1,21 @@
+# robots.txt for matejmazur.net
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://matejmazur.net/sitemap.xml
+
+# Disallow crawling of certain file types
+User-agent: *
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow Google to crawl everything
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing to crawl everything
+User-agent: Bingbot
+Allow: /
