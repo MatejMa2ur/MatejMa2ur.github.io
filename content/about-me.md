@@ -42,6 +42,8 @@ aliases = ['/about-me.html']
                class="b" style="margin-right: 8%;">Home</a>
             <a href="/projects/"
                class="b" style="margin-right: 8%;">Projects</a>
+            <a href="https://mmlw.net"
+               class="b">Blog</a>
             <a href="/about-me/"
                class="b">About Me</a>
         </div>
