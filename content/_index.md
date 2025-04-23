@@ -9,7 +9,7 @@ keywords = 'Matej Mazur, developer, portfolio, projects, web development'
     <div class="h-100 d-flex flex-column flex-sm-row align-sm-items-center">
         <div class="col-sm-6 d-flex justify-content-sm-center align-items-sm-center">
             <div class="tilt-text">
-                <h1 class="nordic h2 display-2">MATEJ MAZUR</h1>
+                <h1 class="nordic h2 display-2 visually-hidden">Matej Mazur</h1>
                 <h2 class="nordic h2 display-2">IMPOSSIBLE</h2>
                 <h2 class="nordic h2 display-2">IS AN</h2>
                 <h2 class="fw-black roboto h1 display-1 text-body-secondary" style="font-weight: 900">OPINION</h2>
