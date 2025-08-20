@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
+
 @font-face {
     font-family: "Nordic Alternative";
     src: url("https://matejmazur.net/font/nordic/Nordic Alternative Regular.ttf") format("truetype");
 }
 
-body, .nordic {
+.nordic {
     font-family: "Nordic Alternative", Arial, sans-serif;
 }
 
 .roboto {
     font-family: "Roboto", sans-serif;
+}
+
+.rubik {
+    font-family: "Rubik Mono One", monospace;
 }
 
 :root {
@@ -55,20 +61,47 @@ body{
     height: 100vh;
     width: 100%;
 }
+
+.bg-intro{
+    background-image: url("/img/Bg.png");
+    background-size: cover;
+    background-position: left;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+.bg-intro-content{
+    height: 100%;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.intro-content-text h2{
+    font-size: 128px;
+}
+@media (max-width: 576px) {
+    .intro-content-text h2{
+        font-size: 56px;
+    }
+}
+
 .links{
-    margin-top: 1em;
-    margin-right: 0.5em;
-    z-index: 100;
+    border-left: 1px solid #FFF;
+    height: 80%;
+    padding-left: 1em;
+}
+
+.links .b-home{
+    font-size: 2em;
+    text-align: left;
 }
 
 .links a{
     width: 100%;
-    padding: 10px 2em;
-    margin: 0.2em;
-    border-radius: 5px;
+    color: #FFF;
     text-decoration: none;
-    color: var(--light-300);
-    background-color: var(--bs-secondary-color);
+}
+
+.bg-intro-links{
+    padding-right: 3em;
 }
 
 
@@ -85,20 +118,8 @@ svg#theme-switcher {
     height: 600px;
 }
 
-.tilt-text h2 {
-    transition: transform 0.3s ease-out; /* Add animation for smooth transition */
-}
 /* Media query for phone screens */
 @media (max-width: 576px) {
-    .tilt-text {
-        padding-left: 0.8em;
-        padding-top: 6.5em;
-    }
-    .tilt-text h2 {
-        transform: rotate(-45deg);
-        margin-bottom: 0.5em;
-        margin-left: -0.5em;
-    }
     svg#theme-switcher {
         width: 400px;
         height: 392px;
