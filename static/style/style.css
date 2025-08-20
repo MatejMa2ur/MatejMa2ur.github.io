@@ -22,8 +22,8 @@
     --light-100: #CEE5F2;
     --light-200: #ACCBE1;
     --light-300: #7C98B3;
-    --yellow: #F4C244;
-    --yellow-rgb: 244, 194, 68;
+    --yellow: #ee824e;
+    --yellow-rgb: 238, 130, 78;
     --gray: #222529;
     --gray-rgb: 34, 37, 41;
 }
@@ -63,11 +63,24 @@ body{
 }
 
 .bg-intro{
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.bg-intro-bg1{
     background-image: url("/img/Bg.png");
     background-size: cover;
     background-position: left;
-    padding-top: 6em;
-    padding-bottom: 6em;
+}
+.bg-intro-bg2{
+    background-image: url("/img/Bg-2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.bg-intro-bg3{
+    background-image: url("/img/Bg-3.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 .bg-intro-content{
     height: 100%;

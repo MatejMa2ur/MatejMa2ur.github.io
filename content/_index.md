@@ -5,7 +5,7 @@ description = 'Personal portfolio of Matej Mazur, a developer passionate about c
 keywords = 'Matej Mazur, developer, portfolio, projects, web development'
 +++
 
-<div class="screen bg-intro">
+<div class="screen bg-intro bg-intro-bg1">
     <div class="bg-intro-content d-flex flex-column-reverse flex-sm-row">
         <div class="col h-100 d-flex flex-column flex-sm-row align-sm-items-center">
             <div class="col-sm-6 px-sm-5 px-4 d-flex align-items-end">
@@ -25,7 +25,7 @@ keywords = 'Matej Mazur, developer, portfolio, projects, web development'
                     <a href="/projects/"
                        class="b">Projects</a>
                     <a href="https://mmlw.net"
-                       class="b">Blog</a>
+                       class="b">Blog <i class="bi bi-arrow-up-right"></i></a>
                     <a href="/about-me/"
                        class="b">About Me</a>
                 </div>

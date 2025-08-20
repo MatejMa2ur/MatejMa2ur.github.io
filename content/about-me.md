@@ -6,18 +6,17 @@ keywords = 'Matej Mazur, about me, developer, portfolio, LinkedIn, GitHub, perso
 aliases = ['/about-me.html']
 +++
 
-<div class="screen">
-    <div class="d-flex align-items-center h-100 position-relative overflow-hidden">
-        <div class="col about-me-title" >
-            <h1 class="h1 display-1 nordic">MATEJ</h1>
-            <h2 class="fw-black roboto h1 display-1 text-body-secondary" style="font-weight: 900;">MAZUR</h2>
-        </div>
-        <div class="d-flex flex-column flex-sm-row position-absolute bottom-0 start-0 w-100 about-me-content">
-            <div class="col-sm-5">
-                <h3 class="h2 display-3 roboto fw-light">Interested in <br/> learning new things and <br/> sharing my knowledge.</h3>
+<div class="screen bg-intro bg-intro-bg3">
+    <div class="bg-intro-content d-flex flex-column-reverse flex-sm-row">
+        <div class="col h-100 d-flex flex-column flex-sm-row align-sm-items-center">
+            <div class="col-sm-6 px-sm-5 px-4 d-flex align-items-end">
+                <div class="intro-content-text">
+                    <span class="text-white display-3">Interested in <br/> learning new things and <br/> sharing my knowledge.</span>
+                    <h2 class="rubik display-1" style="color: #FF7B3E">Matej Mazur</h2>
+                </div>
             </div>
-            <div class="media">
-                <div class="d-flex flex-row gap-5 h-100 align-items-end">
+            <div class="media w-100 pb-3">
+                <div class="d-flex flex-row gap-5 h-100 align-items-end justify-content-center">
                     <a href="https://www.linkedin.com/in/matej-mazur/" class="text-dark">
                         <i class="bi bi-linkedin h2"></i>
                     </a>
@@ -27,25 +26,23 @@ aliases = ['/about-me.html']
                 </div>
             </div>
         </div>
-        <div class="color-stripes d-none d-sm-block">
-            <svg width="518" height="1409" viewBox="0 0 518 1409" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Decorative color stripes" role="img">
-                <rect x="360" y="0.000244141" width="158" height="1409" fill="var(--bs-secondary-color)"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M518 34.2849V0.000253161L401.041 0.000244141L240.094 324H240L240 324.19L240 1409H360V352.353L518 34.2849Z" fill="#CEE5F2"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M401.015 0L267.025 8.1924e-05L120 295.974L120.052 296H120V1409H240V324.138L401.015 0Z" fill="#ACCBE1"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M267.106 0L133.116 0.000328332L0 267.974L0.0515437 268H0.000209333V1409H120V296.137L267.106 0Z" fill="#7D99B3"/>
-            </svg>
+        <div class="bg-intro-links col-auto h-100 d-flex align-items-center">
+            <div class="d-flex flex-column links rubik justify-content-around">
+                <a href="/"
+                   class="b-home">Home</a>
+                <div class="d-flex flex-column gap-4">
+                    <a href="/projects/"
+                       class="b">Projects</a>
+                    <a href="https://mmlw.net"
+                       class="b">Blog <i class="bi bi-arrow-up-right"></i></a>
+                    <a href="/about-me/"
+                       class="b">About Me</a>
+                </div>
+                <div></div>
+            </div>
         </div>
     </div>
-    <div class="position-absolute top-0 end-0">
-        <div class="d-flex flex-column links nordic">
-            <a href="/"
-               class="b" style="margin-right: 8%;">Home</a>
-            <a href="/projects/"
-               class="b" style="margin-right: 8%;">Projects</a>
-            <a href="https://mmlw.net"
-               class="b">Blog</a>
-            <a href="/about-me/"
-               class="b">About Me</a>
-        </div>
+    <div class="position-absolute text-white opacity-50" style="transform: rotate(-90deg); bottom: 10px; right: 15px">
+        Matej <br/> Mazur
     </div>
 </div>
