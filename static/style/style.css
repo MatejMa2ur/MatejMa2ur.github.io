@@ -214,3 +214,244 @@ div#projects-2 {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+
+/* Projects page */
+.scene-track {
+    position: relative;
+}
+
+/* The canvas is pinned for the length of the track; the bands scroll over it. */
+.scene-stage {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.scene-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+/* Shown until three.js has drawn its first frame, and left in place for good
+   when JavaScript, WebGL or the CDN are unavailable. */
+.scene-fallback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0.12;
+    transition: opacity 0.6s ease-out;
+}
+
+.scene-fallback svg {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.scene-stage--live .scene-canvas {
+    opacity: 1;
+}
+
+.scene-stage--live .scene-fallback {
+    opacity: 0;
+}
+
+.scene-content {
+    position: relative;
+    margin-top: -100vh;
+    z-index: 1;
+}
+
+/* Clips the decorative SVG that hangs off the side. Deliberately `clip` and not
+   `hidden`: `hidden` would turn the band into a scroll container and break the
+   sticky canvas behind it. */
+.project-band {
+    position: relative;
+    overflow-x: clip;
+}
+
+/* The band carries more copy than the old layout did, so the decorative shape it
+   sits over is toned down to keep the text readable. */
+.project-band #projects-2 {
+    opacity: 0.4;
+}
+
+/* A flex item with `height: auto` will size itself off the column height and blow
+   past the viewport, so the artwork is capped on both axes instead of stretched. */
+.project-visual {
+    min-width: 0;
+}
+
+.project-visual img,
+.project-visual > svg {
+    align-self: center;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+.project-wordmark {
+    font-weight: 900;
+    line-height: 0.95;
+}
+
+.project-stack {
+    color: var(--light-300);
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.project-meta-link {
+    color: var(--light-300);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.project-meta-link:hover,
+.project-meta-link:focus {
+    color: var(--yellow);
+    border-bottom-color: var(--yellow);
+}
+
+/* The smaller work reads as an index rather than a grid of cards: flat rules,
+   one row per project, in the same hard-edged language as the rest of the site. */
+.projects-index {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.projects-index-title {
+    color: var(--light-300);
+    font-size: 0.85rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.index-row {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    padding: 1.75rem 0;
+    border-top: 1px solid rgba(124, 152, 179, 0.25);
+    color: var(--light-200);
+    text-decoration: none;
+    transition: color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.index-row:last-child {
+    border-bottom: 1px solid rgba(124, 152, 179, 0.25);
+}
+
+.index-row:hover,
+.index-row:focus {
+    color: var(--yellow);
+    border-top-color: var(--yellow);
+}
+
+.index-row:last-child:hover,
+.index-row:last-child:focus {
+    border-bottom-color: var(--yellow);
+}
+
+.index-row-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.index-row-name {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.index-row-note {
+    display: block;
+    max-width: 44rem;
+    margin-top: 0.5rem;
+    color: var(--light-300);
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.index-row-tech {
+    flex: 0 0 auto;
+    color: var(--light-300);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.index-row-arrow {
+    flex: 0 0 auto;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 576px) {
+    .projects-index {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .index-row {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding: 1.25rem 0;
+    }
+    .index-row-name {
+        font-size: 1.5rem;
+    }
+    .index-row-body {
+        flex: 1 1 100%;
+        order: 2;
+    }
+    .index-row-tech {
+        order: 1;
+    }
+    .index-row-arrow {
+        order: 1;
+        margin-left: auto;
+    }
+}
+
+/* No motion: drop the pinned canvas entirely and let the static mark and the copy
+   flow as an ordinary page. */
+@media (prefers-reduced-motion: reduce) {
+    .scene-stage {
+        position: relative;
+        height: auto;
+        min-height: 50vh;
+    }
+    .scene-canvas {
+        display: none;
+    }
+    .scene-fallback {
+        position: relative;
+        opacity: 0.35;
+    }
+    .scene-content {
+        margin-top: 0;
+    }
+    .project-meta-link,
+    .index-row {
+        transition: none;
+    }
+}
