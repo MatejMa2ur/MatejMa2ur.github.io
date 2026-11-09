@@ -79,7 +79,6 @@ hero = 'hero-3'
             <div class="col-12 text-center mb-4">
                 <h2 class="nordic display-1 text-dark fw-bold">SKILLS & EXPERTISE</h2>
             </div>
-
             <div class="col-lg-4 px-5">
                 <div class="border border-dark border-3 bg-white p-4 h-100">
                     <h3 class="rubik text-dark mb-4 border-bottom border-dark border-2 pb-3">LANGUAGES</h3>
@@ -91,7 +90,6 @@ hero = 'hero-3'
                     </ul>
                 </div>
             </div>
-
             <div class="col-lg-4 px-5">
                 <div class="border border-dark border-3 bg-white p-4 h-100">
                     <h3 class="rubik text-dark mb-4 border-bottom border-dark border-2 pb-3">FRAMEWORKS & TOOLS</h3>
@@ -105,7 +103,6 @@ hero = 'hero-3'
                     </ul>
                 </div>
             </div>
-
             <div class="col-lg-4 px-5">
                 <div class="border border-dark border-3 bg-white p-4 h-100">
                     <h3 class="rubik text-dark mb-4 border-bottom border-dark border-2 pb-3">FOCUS AREAS</h3>
@@ -128,19 +125,16 @@ hero = 'hero-3'
             <div class="col-12 text-center mb-5">
                 <h2 class="nordic display-1 text-white fw-bold">HOW I WORK</h2>
             </div>
-
             <div class="col-lg-10 offset-lg-1">
                 <div class="row g-0">
                     <div class="col-md-4 p-5 border-end border-white border-2 stats-col">
                         <h3 class="rubik text-white mb-3 fs-4">SECURITY-FIRST THINKING</h3>
                         <p class="roboto text-white">Building secure solutions from the ground up. Security isn't an afterthought—it's embedded in every decision, from architecture to deployment.</p>
                     </div>
-
                     <div class="col-md-4 p-5 border-end border-white border-2 stats-col">
                         <h3 class="rubik text-white mb-3 fs-4">COMMUNITY-DRIVEN DESIGN</h3>
                         <p class="roboto text-white">Creating tools that solve real problems for real people. Every project starts with understanding the community's needs and building solutions that empower them.</p>
                     </div>
-
                     <div class="col-md-4 p-5 stats-col">
                         <h3 class="rubik text-white mb-3 fs-4">CONTINUOUS LEARNING</h3>
                         <p class="roboto text-white">Technology evolves, and so do I. Constantly exploring new tools, patterns, and approaches to deliver better solutions and share knowledge with others.</p>

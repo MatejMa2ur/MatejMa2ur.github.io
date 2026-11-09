@@ -105,7 +105,7 @@ body{
 @media (max-width: 576px) {
     .intro-content-text h1.display-1,
     .intro-content-text .slogan{
-        font-size: 56px;
+        font-size: clamp(2rem, 11vw, 3.5rem);
     }
 }
 
@@ -474,8 +474,12 @@ div#projects-2 {
    inside these flat panels they are pinned back to plain black/grey. */
 /* Panels hold more copy than fits one phone screen, so they grow instead of clipping. */
 .screen.panel {
+    display: flex; /* stretches the inner .h-100 container so it can still centre */
     height: auto;
     min-height: 100vh;
+}
+.screen.panel > .h-100 {
+    height: auto !important;
 }
 .panel .text-dark {
     color: #000 !important;
@@ -561,4 +565,56 @@ div#projects-2 {
 .site-footer a:hover,
 .site-footer a:focus {
     color: var(--yellow);
+}
+
+/* Tap targets: at least 44px tall. */
+.links a,
+.project-meta-link,
+.cta-link,
+.project-card a,
+.site-footer a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}
+
+/* Phones: the hero grows with its content and the nav becomes one compact
+   row above it, so nothing is clipped and the H1 stays above the fold. */
+@media (max-width: 576px) {
+    .bg-intro {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 1.5em;
+        padding-bottom: 3em;
+    }
+    .bg-intro-content {
+        height: auto;
+        min-height: calc(100vh - 4.5em);
+    }
+    .bg-intro-links {
+        height: auto !important;
+        padding: 0 1.5rem;
+    }
+    .links {
+        height: auto;
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid #FFF;
+        padding-left: 0;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 1.25rem;
+    }
+    .links {
+        justify-content: flex-start !important;
+    }
+    .links > div {
+        display: contents !important;
+    }
+    .links a,
+    .links .b-home {
+        width: auto;
+        font-size: 0.9em;
+    }
 }
