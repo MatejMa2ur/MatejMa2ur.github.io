@@ -1,0 +1,17 @@
+# Matej Mazur
+
+> Portfolio of Matej Mazur: the COD3RS developer community, Hack Esbjerg, Y-A-S and open-source work such as Blazor.MapLibre.
+
+## Pages
+
+- [About](https://matejmazur.net/about-me/): skills, tech stack and how to get in touch
+- [Projects](https://matejmazur.net/projects/): COD3RS, Y-A-S, CycleBridge, Hack The Flag, Hack Esbjerg and smaller open-source work
+
+## Elsewhere
+
+- [Blog](https://mmlw.net/)
+- [GitHub](https://github.com/MatejMa2ur)
+- [LinkedIn](https://www.linkedin.com/in/matej-mazur/)
+- [Y-A-S](https://y-a-s.net/)
+- [COD3RS](https://cod3rs.org/)
+- [Hack Esbjerg](https://hackesbjerg.dk/)

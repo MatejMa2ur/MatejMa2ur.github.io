@@ -1,19 +1,19 @@
 +++
 date = '2025-04-17T01:39:37+02:00'
-title = 'Projects | Matej Mazur'
-description = "Explore Matej Mazur's portfolio of projects including COD3RS, a developer community across Denmark and Slovakia, and Y-A-S, a software team building CycleBridge and open-source tooling."
-keywords = "Matej Mazur, projects, portfolio, COD3RS, Y-A-S, CycleBridge, Hack The Flag, Hack Esbjerg, developer projects"
+title = 'Projects'
+description = "Projects by Matej Mazur: COD3RS, a developer community across Denmark and Slovakia; Y-A-S, a software team building CycleBridge; Hack Esbjerg, Hack The Flag and open-source tools."
 aliases = ['/projects.html']
 scene = true
+hero = 'hero-2'
 +++
 
-<div class="screen bg-intro bg-intro-bg2">
+<div class="screen bg-intro">
     <div class="bg-intro-content d-flex flex-column-reverse flex-sm-row">
         <div class="col h-100 d-flex flex-column flex-sm-row align-sm-items-center">
             <div class="col-sm-6 px-sm-5 px-4 d-flex align-items-end">
                 <div class="intro-content-text">
                     <span class="text-white display-3">I was always interested in creating new things, here I share some of them with you.</span>
-                    <h2 class="rubik display-1" style="color: #FF7B3E">Projects</h2>
+                    <h1 class="rubik display-1" style="color: #FF7B3E">Projects</h1>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@ scene = true
                 <div class="d-flex flex-column gap-4">
                     <a href="/projects/"
                        class="b">Projects</a>
-                    <a href="https://mmlw.net"
+                    <a href="https://mmlw.net/"
                        class="b">Blog <i class="bi bi-arrow-up-right"></i></a>
                     <a href="/about-me/"
                        class="b">About Me</a>
@@ -71,7 +71,7 @@ scene = true
                     <div class="d-flex flex-row flex-wrap gap-4 roboto">
                         <a href="https://discord.gg/jZzVbN2gmA" rel="noopener" class="project-meta-link">Discord</a>
                         <a href="https://github.com/Cod3rs-org" rel="noopener" class="project-meta-link">GitHub</a>
-                        <a href="https://hack-esbjerg.cod3rs.org" rel="noopener" class="project-meta-link">Hack Esbjerg</a>
+                        <a href="https://hackesbjerg.dk/" rel="noopener" class="project-meta-link">Hack Esbjerg</a>
                     </div>
                 </div>
                 <div class="col-sm h-100 d-flex flex-column justify-content-sm-center pe-sm-5 p-3 project-visual">
@@ -95,7 +95,7 @@ scene = true
                     </svg>
                 </div>
                 <div class="col-sm h-100 d-flex flex-column justify-content-center p-3 ps-sm-5 position-relative project-visual">
-                    <img src="/img/proj/y-a-s/y-a-s.png" class="p-0 img-fluid" alt="Y-A-S - software team building full-stack applications" />
+                    <img src="/img/proj/y-a-s/y-a-s.webp" width="1322" height="880" loading="lazy" class="p-0 img-fluid" alt="Y-A-S - software team building full-stack applications" />
                 </div>
                 <div class="col-sm h-100 d-flex flex-column justify-content-sm-end p-3 p-sm-5 gap-4 align-items-end position-relative">
                     <div class="d-flex flex-row pe-sm-5">
@@ -119,6 +119,7 @@ scene = true
                         <a href="https://cyclebridge.app/" rel="noopener" class="project-meta-link">CycleBridge</a>
                         <a href="https://github.com/Yet-another-solution/Blazor.MapLibre" rel="noopener" class="project-meta-link">Blazor.MapLibre</a>
                         <a href="https://github.com/Yet-another-solution" rel="noopener" class="project-meta-link">GitHub</a>
+                        <a href="https://y-a-s.net/" rel="noopener" class="project-meta-link">Start a project with Y-A-S</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +138,7 @@ scene = true
             <span class="index-row-tech">Blazor &middot; Cryptography</span>
             <i class="bi bi-arrow-up-right index-row-arrow"></i>
         </a>
-        <a href="https://hack-esbjerg.cod3rs.org" rel="noopener" class="index-row roboto">
+        <a href="https://hackesbjerg.dk/" rel="noopener" class="index-row roboto">
             <span class="index-row-body">
                 <span class="index-row-name">Hack Esbjerg</span>
                 <span class="index-row-note">Denmark&rsquo;s 24-hour hackathon. Open to all skill levels, run by COD3RS with EASV.</span>
@@ -193,5 +194,6 @@ scene = true
             <span class="index-row-tech">Swift &middot; iOS</span>
             <i class="bi bi-arrow-up-right index-row-arrow"></i>
         </a>
+        <p class="roboto fw-light mt-5 mb-0">More about me and the tools I use on the <a href="/about-me/" class="text-link">About page</a>.</p>
     </div>
 </div>
