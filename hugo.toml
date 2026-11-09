@@ -1,18 +1,22 @@
-baseURL = 'https://mmlw.net/'
-languageCode = 'en-us'
-title = 'Matej Mazur | Developer & Creator'
-description = 'Personal portfolio of Matej Mazur, showcasing projects like COD3RS and Y-A-S, along with professional information and skills.'
-enableRobotsTXT = true
+baseURL = 'https://matejmazur.net/'
+locale = 'en-US'
+title = 'Matej Mazur'
+description = "Matej Mazur's portfolio: COD3RS, Y-A-S, Hack Esbjerg and open-source projects."
+disableKinds = ['taxonomy', 'term']
+enableGitInfo = true
+
+[frontmatter]
+  lastmod = [':git', 'lastmod', 'date']
 
 [params]
   author = "Matej Mazur"
-  description = "Personal portfolio of Matej Mazur, showcasing projects like COD3RS and Y-A-S, along with professional information and skills."
-  keywords = "Matej Mazur, developer, portfolio, projects, COD3RS, Y-A-S, CycleBridge"
-  images = ["/img/Me.png"]
+  description = "Matej Mazur's portfolio: COD3RS, Y-A-S, Hack Esbjerg and open-source projects."
+  images = ["img/og.jpg"]
 
   [params.social]
     github = "https://github.com/MatejMa2ur"
     linkedin = "https://www.linkedin.com/in/matej-mazur/"
+    blog = "https://mmlw.net/"
 
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files

@@ -1,8 +1,7 @@
 +++
 date = '2025-04-17T01:39:37+02:00'
-title = 'About Me | Matej Mazur'
-description = 'Learn more about Matej Mazur, a developer passionate about learning new things and sharing knowledge. Connect with me on LinkedIn and GitHub.'
-keywords = 'Matej Mazur, about me, developer, portfolio, LinkedIn, GitHub, personal website'
+title = 'About Me'
+description = "About Matej Mazur: skills, tech stack, how he works and where to connect on LinkedIn and GitHub."
 aliases = ['/about-me.html']
 +++
 

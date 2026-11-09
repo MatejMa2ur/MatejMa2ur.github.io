@@ -1,8 +1,7 @@
 +++
 date = '2025-04-16T23:43:40+02:00'
-title = 'Matej Mazur | Developer & Creator'
-description = 'Personal portfolio of Matej Mazur, a developer passionate about creating innovative solutions and sharing knowledge.'
-keywords = 'Matej Mazur, developer, portfolio, projects, web development'
+title = 'Matej Mazur – Projects, community and open source'
+description = "Matej Mazur's portfolio: the COD3RS developer community, Hack Esbjerg, Y-A-S and open-source work such as Blazor.MapLibre."
 +++
 
 <div class="screen bg-intro bg-intro-bg1">

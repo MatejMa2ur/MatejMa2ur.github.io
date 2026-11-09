@@ -13,7 +13,7 @@
 ![Hugo](https://img.shields.io/badge/Hugo-FF4088?style=for-the-badge&logo=hugo&logoColor=white)
 
   <p align="center">
-    <a href="https://mmlw.net/"><strong>Visit the site</strong></a>
+    <a href="https://matejmazur.net/"><strong>Visit the site</strong></a>
     &middot;
     <a href="https://github.com/MatejMa2ur/MatejMa2ur.github.io/issues/new?labels=bug">Report Bug</a>
     &middot;
@@ -26,7 +26,7 @@
 <table>
   <tr>
     <td nowrap><img src="docs/images/icons/globe.svg" width="16" height="16" alt="">&nbsp;<strong>Live&nbsp;at</strong></td>
-    <td><a href="https://mmlw.net/">mmlw.net</a></td>
+    <td><a href="https://matejmazur.net/">matejmazur.net</a></td>
   </tr>
   <tr>
     <td nowrap><img src="docs/images/icons/layers.svg" width="16" height="16" alt="">&nbsp;<strong>Pages</strong></td>

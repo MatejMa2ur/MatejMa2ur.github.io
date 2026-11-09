@@ -1,8 +1,7 @@
 +++
 date = '2025-04-17T01:39:37+02:00'
-title = 'Projects | Matej Mazur'
-description = "Explore Matej Mazur's portfolio of projects including COD3RS, a developer community across Denmark and Slovakia, and Y-A-S, a software team building CycleBridge and open-source tooling."
-keywords = "Matej Mazur, projects, portfolio, COD3RS, Y-A-S, CycleBridge, Hack The Flag, Hack Esbjerg, developer projects"
+title = 'Projects'
+description = "Projects by Matej Mazur: COD3RS, a developer community across Denmark and Slovakia; Y-A-S, a software team building CycleBridge; Hack Esbjerg, Hack The Flag and open-source tools."
 aliases = ['/projects.html']
 scene = true
 +++
