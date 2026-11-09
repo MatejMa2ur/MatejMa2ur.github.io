@@ -9,11 +9,11 @@
     <meta name="description" content="{{ $desc }}">
     <meta name="author" content="{{ site.Params.author }}">
     {{ if eq .Kind "404" }}<meta name="robots" content="noindex">{{ end }}
-    <link rel="canonical" href="{{ .Permalink }}">
+    {{ if ne .Kind "404" }}<link rel="canonical" href="{{ .Permalink }}">{{ end }}
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="{{ if eq .RelPermalink "/about-me/" }}profile{{ else }}website{{ end }}">
-    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="{{ if .Params.profile }}profile{{ else }}website{{ end }}">
+    {{ if ne .Kind "404" }}<meta property="og:url" content="{{ .Permalink }}">{{ end }}
     <meta property="og:title" content="{{ $title }}">
     <meta property="og:description" content="{{ $desc }}">
     <meta property="og:image" content="{{ $image }}">
@@ -22,15 +22,15 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="{{ .Permalink }}">
+    {{ if ne .Kind "404" }}<meta name="twitter:url" content="{{ .Permalink }}">{{ end }}
     <meta name="twitter:title" content="{{ $title }}">
     <meta name="twitter:description" content="{{ $desc }}">
     <meta name="twitter:image" content="{{ $image }}">
 
     <title>{{ $title }}</title>
 
-    <script>try{document.documentElement.setAttribute('data-bs-theme',sessionStorage.getItem('theme')||'dark')}catch(e){}</script>
     {{ with .Params.hero }}
+    <style>:root{--hero:url("/img/{{ . }}-1920.webp");--hero-sm:url("/img/{{ . }}-800.webp")}</style>
     <link rel="preload" as="image" href="/img/{{ . }}-800.webp" media="(max-width: 576px)" fetchpriority="high">
     <link rel="preload" as="image" href="/img/{{ . }}-1920.webp" media="(min-width: 577px)" fetchpriority="high">
     {{ end }}
@@ -51,38 +51,42 @@
     {{ partial "footer.html" . }}
 
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script defer src="/js/script.js"></script>
     {{ if .Params.scene }}<script src="/js/projects-scene.js" type="module"></script>{{ end }}
 
     <!-- Structured Data for SEO -->
-    {{- $person := dict
-        "@type" "Person"
-        "@id" (print site.Home.Permalink "#person")
-        "name" site.Params.author
-        "url" site.Home.Permalink
-        "image" (index site.Params.images 0 | absURL)
-        "sameAs" (slice site.Params.social.blog site.Params.social.github site.Params.social.linkedin) }}
-    {{- $website := dict
-        "@type" "WebSite"
-        "@id" (print site.Home.Permalink "#website")
-        "url" site.Home.Permalink
-        "name" site.Title
-        "inLanguage" "en"
-        "publisher" (dict "@id" (print site.Home.Permalink "#person")) }}
+    {{- $personID := print site.Home.Permalink "#person" }}
+    {{- $websiteID := print site.Home.Permalink "#website" }}
+    {{- $graph := slice
+        (dict
+            "@type" "Person"
+            "@id" $personID
+            "name" site.Params.author
+            "url" site.Home.Permalink
+            "image" (index site.Params.images 0 | absURL)
+            "sameAs" (slice site.Params.social.blog site.Params.social.github site.Params.social.linkedin))
+        (dict
+            "@type" "WebSite"
+            "@id" $websiteID
+            "url" site.Home.Permalink
+            "name" site.Title
+            "inLanguage" "en"
+            "publisher" (dict "@id" $personID)) }}
+    {{- if ne .Kind "404" }}
     {{- $page := dict
-        "@type" (cond (eq .RelPermalink "/about-me/") "ProfilePage" "WebPage")
+        "@type" (cond (.Params.profile | default false) "ProfilePage" "WebPage")
         "@id" .Permalink
         "url" .Permalink
         "name" .Title
-        "isPartOf" (dict "@id" (print site.Home.Permalink "#website")) }}
-    {{- if eq .RelPermalink "/about-me/" }}{{ $page = merge $page (dict "mainEntity" (dict "@id" (print site.Home.Permalink "#person"))) }}{{ end }}
-    {{- $graph := slice $person $website $page }}
-    {{- if and (not .IsHome) (ne .Kind "404") }}
+        "isPartOf" (dict "@id" $websiteID) }}
+    {{- with .Params.profile }}{{ $page = merge $page (dict "mainEntity" (dict "@id" $personID)) }}{{ end }}
+    {{- $graph = $graph | append $page }}
+    {{- if not .IsHome }}
     {{- $graph = $graph | append (dict
         "@type" "BreadcrumbList"
         "itemListElement" (slice
             (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.Home.Permalink)
             (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink))) }}
+    {{- end }}
     {{- end }}
     <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
 </body>

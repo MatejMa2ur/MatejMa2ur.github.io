@@ -3,10 +3,11 @@ date = '2025-04-17T01:39:37+02:00'
 title = 'About Me'
 description = "About Matej Mazur: skills, tech stack, how he works and where to connect on LinkedIn and GitHub."
 aliases = ['/about-me.html']
+profile = true
 hero = 'hero-3'
 +++
 
-<div class="screen bg-intro bg-intro-bg3">
+<div class="screen bg-intro">
     <div class="bg-intro-content d-flex flex-column-reverse flex-sm-row">
         <div class="col h-100 d-flex flex-column flex-sm-row align-sm-items-center">
             <div class="col-sm-6 px-sm-5 px-4 d-flex align-items-end">
@@ -44,31 +45,6 @@ hero = 'hero-3'
     </div>
     <div class="position-absolute text-white opacity-50" style="transform: rotate(-90deg); bottom: 10px; right: 15px">
         Matej <br/> Mazur
-    </div>
-</div>
-
-<!-- Personal Story Section -->
-<div class="screen panel bg-white">
-    <div class="container h-100 d-flex align-items-center">
-        <div class="row w-100">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="border border-dark border-3 p-5">
-                    <h2 class="nordic display-2 text-dark fw-bold mb-5">WHO I AM</h2>
-                    <div class="roboto fs-5 text-dark">
-                        <p class="mb-4">
-                            I've been building digital solutions driven by curiosity and a passion for solving real-world problems. What started as an interest in technology evolved into a focus on creating secure, community-driven platforms that people actually use.
-                        </p>
-                        <p class="mb-4">
-                            My work centers around ASP.NET and Blazor, building everything from cybersecurity competition platforms to community initiatives. I believe in security-first thinking, continuous learning, and designing with the community's needs in mind.
-                        </p>
-                        <p class="border-start border-dark border-5 ps-4 fs-4 fw-bold mb-0">
-                            "Technology should empower communities, not complicate them."
-                        </p>
-                        <p class="mt-4 mb-0">See what I've built on the <a href="/projects/" class="text-dark">Projects page</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -114,6 +90,9 @@ hero = 'hero-3'
                     </ul>
                 </div>
             </div>
+            <div class="col-12 text-center roboto fs-5">
+                <a href="/projects/" class="cta-link text-dark">See what I've built</a>
+            </div>
         </div>
     </div>
 </div>
@@ -137,7 +116,7 @@ hero = 'hero-3'
                     </div>
                     <div class="col-md-4 p-5 stats-col">
                         <h3 class="rubik text-white mb-3 fs-4">CONTINUOUS LEARNING</h3>
-                        <p class="roboto text-white">Technology evolves, and so do I. Constantly exploring new tools, patterns, and approaches to deliver better solutions and share knowledge with others.</p>
+                        <p class="roboto text-white">Constantly exploring new tools, patterns, and approaches to deliver better solutions and share knowledge with others.</p>
                     </div>
                 </div>
             </div>
@@ -158,9 +137,6 @@ hero = 'hero-3'
                     <a href="https://github.com/MatejMa2ur" class="text-dark hover-scale" aria-label="Matej Mazur on GitHub">
                         <i class="bi bi-github" style="font-size: 5rem;"></i>
                     </a>
-                </div>
-                <div class="border border-dark border-3 bg-white p-4 mt-5">
-                    <p class="rubik text-dark fs-3 mb-0" style="color: #FF7B3E !important;">OPEN TO COLLABORATION</p>
                 </div>
                 <div class="d-flex flex-wrap justify-content-center gap-4 mt-4 roboto fs-5">
                     <a href="https://www.linkedin.com/in/matej-mazur/" class="cta-link text-dark">Connect on LinkedIn</a>

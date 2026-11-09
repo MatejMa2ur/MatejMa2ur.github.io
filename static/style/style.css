@@ -66,25 +66,17 @@ body{
     padding-bottom: 6em;
 }
 
-.bg-intro-bg1{
-    background-image: url("/img/hero-1-1920.webp");
+/* The image comes from the page's `hero` front matter (see baseof). */
+.bg-intro{
+    background-image: var(--hero);
     background-size: cover;
+    background-position: center;
+}
+.bg-intro-left{
     background-position: left;
 }
-.bg-intro-bg2{
-    background-image: url("/img/hero-2-1920.webp");
-    background-size: cover;
-    background-position: center;
-}
-.bg-intro-bg3{
-    background-image: url("/img/hero-3-1920.webp");
-    background-size: cover;
-    background-position: center;
-}
 @media (max-width: 576px) {
-    .bg-intro-bg1{ background-image: url("/img/hero-1-800.webp"); }
-    .bg-intro-bg2{ background-image: url("/img/hero-2-800.webp"); }
-    .bg-intro-bg3{ background-image: url("/img/hero-3-800.webp"); }
+    .bg-intro{ background-image: var(--hero-sm); }
 }
 .bg-intro-content{
     height: 100%;
@@ -132,24 +124,8 @@ body{
 
 
 
-/* Index.html */
-.circle-color, .person-color {
-    transition: fill 0.4s ease-out;
-}
-svg#theme-switcher {
-    cursor: pointer;
-}
-svg#theme-switcher {
-    width: 612px;
-    height: 600px;
-}
-
 /* Media query for phone screens */
 @media (max-width: 576px) {
-    svg#theme-switcher {
-        width: 400px;
-        height: 392px;
-    }
     .hidden-right {
         position: absolute;
         right: -20%; /* Move element far enough to the right to hide it completely */
@@ -331,17 +307,30 @@ div#projects-2 {
     text-transform: uppercase;
 }
 
+/* inline-block + vertical padding gives a 44px tap target; the underline is
+   text-decoration so it stays under the text, not under the padding. */
 .project-meta-link {
+    display: inline-block;
+    padding: 0.625rem 0;
     color: var(--light-300);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 0.2s ease-out, border-color 0.2s ease-out;
+    text-decoration: underline transparent;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease-out, text-decoration-color 0.2s ease-out;
 }
 
 .project-meta-link:hover,
 .project-meta-link:focus {
     color: var(--yellow);
-    border-bottom-color: var(--yellow);
+    text-decoration-color: var(--yellow);
+}
+
+.text-link {
+    color: var(--light-200);
+    text-underline-offset: 4px;
+}
+.text-link:hover,
+.text-link:focus {
+    color: var(--yellow);
 }
 
 /* The smaller work reads as an index rather than a grid of cards: flat rules,
@@ -516,6 +505,10 @@ div#projects-2 {
     transform: scale(1.1);
 }
 
+.fw-black {
+    font-weight: 900;
+}
+
 .mono-stack {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     font-weight: 500;
@@ -525,7 +518,12 @@ div#projects-2 {
     .stats-col,
     .what-i-do-col {
         border-right: none !important;
-        border-bottom: 3px solid currentColor;
+    }
+    .what-i-do-col {
+        border-bottom: 3px solid #000;
+    }
+    .stats-col {
+        border-bottom: 2px solid #FFF;
     }
     .stats-col:last-child,
     .what-i-do-col:last-child {
@@ -569,7 +567,6 @@ div#projects-2 {
 
 /* Tap targets: at least 44px tall. */
 .links a,
-.project-meta-link,
 .cta-link,
 .project-card a,
 .site-footer a {

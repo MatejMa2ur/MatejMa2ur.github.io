@@ -5,7 +5,7 @@ description = "Matej Mazur's portfolio: the COD3RS developer community, Hack Esb
 hero = 'hero-1'
 +++
 
-<div class="screen bg-intro bg-intro-bg1">
+<div class="screen bg-intro bg-intro-left">
     <div class="bg-intro-content d-flex flex-column-reverse flex-sm-row">
         <div class="col h-100 d-flex flex-column flex-sm-row align-sm-items-center">
             <div class="col-sm-6 px-sm-5 px-4 d-flex align-items-end">
@@ -14,8 +14,6 @@ hero = 'hero-1'
                     <p class="slogan nordic text-white">IMPOSSIBLE</p>
                     <p class="slogan nordic text-white">IS AN</p>
                     <p class="slogan rubik" style="color: #FF7B3E">OPINION</p>
-                    <p class="roboto text-white mt-4 fs-5">Creative Developer building platforms that solve real problems</p>
-                    <p class="rubik text-white mt-3 fs-6" style="color: #FF7B3E">OPEN TO COLLABORATION</p>
                     <div class="d-flex flex-wrap gap-4 mt-4 roboto">
                         <a href="https://www.linkedin.com/in/matej-mazur/" class="cta-link">Connect on LinkedIn</a>
                         <a href="https://y-a-s.net/" class="cta-link">Work with Y-A-S</a>
@@ -60,7 +58,7 @@ hero = 'hero-1'
             <div class="col-md-4 p-5 border-end border-dark border-3 what-i-do-col">
                 <div class="brutalist-box p-4">
                     <p class="rubik text-dark mb-4 fs-4">02 — DESIGN</p>
-                    <p class="roboto text-dark">Creating intuitive user experiences that balance functionality with aesthetics. Every interface tells a story and serves a purpose.</p>
+                    <p class="roboto text-dark">Creating intuitive user experiences that balance functionality with aesthetics.</p>
                 </div>
             </div>
             <div class="col-md-4 p-5 what-i-do-col">
@@ -107,35 +105,6 @@ hero = 'hero-1'
         <div class="row mt-5">
             <div class="col-12 text-center">
                 <a href="/projects/" class="rubik text-dark fs-3 text-decoration-none border-bottom border-dark border-3 pb-2">VIEW ALL PROJECTS →</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Stats Section -->
-<div class="screen panel bg-dark">
-    <div class="container-fluid h-100 d-flex align-items-center">
-        <div class="row w-100 g-0">
-            <div class="col-md-4 p-5 border-end border-white border-3 stats-col">
-                <div class="text-center">
-                    <p class="nordic display-1 text-white fw-bold">2019</p>
-                    <p class="rubik text-white fs-5">BUILDING SINCE</p>
-                    <p class="roboto text-white">Creating innovative solutions since 2019</p>
-                </div>
-            </div>
-            <div class="col-md-4 p-5 border-end border-white border-3 stats-col">
-                <div class="text-center">
-                    <p class="nordic display-1 text-white fw-bold">3</p>
-                    <p class="rubik text-white fs-5">PLATFORMS</p>
-                    <p class="roboto text-white">From cybersecurity to community building</p>
-                </div>
-            </div>
-            <div class="col-md-4 p-5 stats-col">
-                <div class="text-center">
-                    <p class="nordic display-1 fw-bold" style="color: #FF7B3E">ACTIVE</p>
-                    <p class="rubik text-white fs-5">OPEN TO WORK</p>
-                    <p class="roboto text-white">Available for collaboration and new projects</p>
-                </div>
             </div>
         </div>
     </div>

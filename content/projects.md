@@ -7,7 +7,7 @@ scene = true
 hero = 'hero-2'
 +++
 
-<div class="screen bg-intro bg-intro-bg2">
+<div class="screen bg-intro">
     <div class="bg-intro-content d-flex flex-column-reverse flex-sm-row">
         <div class="col h-100 d-flex flex-column flex-sm-row align-sm-items-center">
             <div class="col-sm-6 px-sm-5 px-4 d-flex align-items-end">
@@ -194,6 +194,6 @@ hero = 'hero-2'
             <span class="index-row-tech">Swift &middot; iOS</span>
             <i class="bi bi-arrow-up-right index-row-arrow"></i>
         </a>
-        <p class="roboto fw-light mt-5 mb-0">More about me and the tools I use on the <a href="/about-me/" class="project-meta-link">About page</a>.</p>
+        <p class="roboto fw-light mt-5 mb-0">More about me and the tools I use on the <a href="/about-me/" class="text-link">About page</a>.</p>
     </div>
 </div>
