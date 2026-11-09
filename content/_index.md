@@ -16,6 +16,10 @@ hero = 'hero-1'
                     <p class="slogan rubik" style="color: #FF7B3E">OPINION</p>
                     <p class="roboto text-white mt-4 fs-5">Creative Developer building platforms that solve real problems</p>
                     <p class="rubik text-white mt-3 fs-6" style="color: #FF7B3E">OPEN TO COLLABORATION</p>
+                    <div class="d-flex flex-wrap gap-4 mt-4 roboto">
+                        <a href="https://www.linkedin.com/in/matej-mazur/" class="cta-link">Connect on LinkedIn</a>
+                        <a href="https://y-a-s.net/" class="cta-link">Work with Y-A-S</a>
+                    </div>
                 </div>
             </div>
         </div>

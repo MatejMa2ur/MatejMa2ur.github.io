@@ -64,6 +64,7 @@ hero = 'hero-3'
                         <p class="border-start border-dark border-5 ps-4 fs-4 fw-bold mb-0">
                             "Technology should empower communities, not complicate them."
                         </p>
+                        <p class="mt-4 mb-0">See what I've built on the <a href="/projects/" class="text-dark">Projects page</a>.</p>
                     </div>
                 </div>
             </div>
@@ -166,6 +167,10 @@ hero = 'hero-3'
                 </div>
                 <div class="border border-dark border-3 bg-white p-4 mt-5">
                     <p class="rubik text-dark fs-3 mb-0" style="color: #FF7B3E !important;">OPEN TO COLLABORATION</p>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-4 mt-4 roboto fs-5">
+                    <a href="https://www.linkedin.com/in/matej-mazur/" class="cta-link text-dark">Connect on LinkedIn</a>
+                    <a href="https://y-a-s.net/" class="cta-link text-dark">Work with Y-A-S</a>
                 </div>
             </div>
         </div>

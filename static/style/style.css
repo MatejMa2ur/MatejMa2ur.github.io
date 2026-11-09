@@ -536,3 +536,29 @@ div#projects-2 {
         transition: none;
     }
 }
+
+.cta-link {
+    color: #FFF;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.cta-link:hover,
+.cta-link:focus {
+    color: #FF7B3E;
+}
+
+.site-footer {
+    padding: 2.5rem 0;
+    border-top: 1px solid rgba(124, 152, 179, 0.25);
+    color: var(--light-300);
+    font-size: 0.95rem;
+}
+.site-footer a {
+    color: var(--light-200);
+    text-decoration: none;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+    color: var(--yellow);
+}

@@ -71,7 +71,7 @@ hero = 'hero-2'
                     <div class="d-flex flex-row flex-wrap gap-4 roboto">
                         <a href="https://discord.gg/jZzVbN2gmA" rel="noopener" class="project-meta-link">Discord</a>
                         <a href="https://github.com/Cod3rs-org" rel="noopener" class="project-meta-link">GitHub</a>
-                        <a href="https://hack-esbjerg.cod3rs.org" rel="noopener" class="project-meta-link">Hack Esbjerg</a>
+                        <a href="https://hackesbjerg.dk/" rel="noopener" class="project-meta-link">Hack Esbjerg</a>
                     </div>
                 </div>
                 <div class="col-sm h-100 d-flex flex-column justify-content-sm-center pe-sm-5 p-3 project-visual">
@@ -119,6 +119,7 @@ hero = 'hero-2'
                         <a href="https://cyclebridge.app/" rel="noopener" class="project-meta-link">CycleBridge</a>
                         <a href="https://github.com/Yet-another-solution/Blazor.MapLibre" rel="noopener" class="project-meta-link">Blazor.MapLibre</a>
                         <a href="https://github.com/Yet-another-solution" rel="noopener" class="project-meta-link">GitHub</a>
+                        <a href="https://y-a-s.net/" rel="noopener" class="project-meta-link">Start a project with Y-A-S</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +138,7 @@ hero = 'hero-2'
             <span class="index-row-tech">Blazor &middot; Cryptography</span>
             <i class="bi bi-arrow-up-right index-row-arrow"></i>
         </a>
-        <a href="https://hack-esbjerg.cod3rs.org" rel="noopener" class="index-row roboto">
+        <a href="https://hackesbjerg.dk/" rel="noopener" class="index-row roboto">
             <span class="index-row-body">
                 <span class="index-row-name">Hack Esbjerg</span>
                 <span class="index-row-note">Denmark&rsquo;s 24-hour hackathon. Open to all skill levels, run by COD3RS with EASV.</span>
@@ -193,5 +194,6 @@ hero = 'hero-2'
             <span class="index-row-tech">Swift &middot; iOS</span>
             <i class="bi bi-arrow-up-right index-row-arrow"></i>
         </a>
+        <p class="roboto fw-light mt-5 mb-0">More about me and the tools I use on the <a href="/about-me/" class="project-meta-link">About page</a>.</p>
     </div>
 </div>
