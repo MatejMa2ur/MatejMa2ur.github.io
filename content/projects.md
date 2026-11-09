@@ -4,6 +4,7 @@ title = 'Projects'
 description = "Projects by Matej Mazur: COD3RS, a developer community across Denmark and Slovakia; Y-A-S, a software team building CycleBridge; Hack Esbjerg, Hack The Flag and open-source tools."
 aliases = ['/projects.html']
 scene = true
+hero = 'hero-2'
 +++
 
 <div class="screen bg-intro bg-intro-bg2">
@@ -94,7 +95,7 @@ scene = true
                     </svg>
                 </div>
                 <div class="col-sm h-100 d-flex flex-column justify-content-center p-3 ps-sm-5 position-relative project-visual">
-                    <img src="/img/proj/y-a-s/y-a-s.png" class="p-0 img-fluid" alt="Y-A-S - software team building full-stack applications" />
+                    <img src="/img/proj/y-a-s/y-a-s.webp" width="1322" height="880" loading="lazy" class="p-0 img-fluid" alt="Y-A-S - software team building full-stack applications" />
                 </div>
                 <div class="col-sm h-100 d-flex flex-column justify-content-sm-end p-3 p-sm-5 gap-4 align-items-end position-relative">
                     <div class="d-flex flex-row pe-sm-5">

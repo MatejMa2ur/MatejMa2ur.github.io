@@ -3,6 +3,7 @@ date = '2025-04-17T01:39:37+02:00'
 title = 'About Me'
 description = "About Matej Mazur: skills, tech stack, how he works and where to connect on LinkedIn and GitHub."
 aliases = ['/about-me.html']
+hero = 'hero-3'
 +++
 
 <div class="screen bg-intro bg-intro-bg3">

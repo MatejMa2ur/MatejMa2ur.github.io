@@ -2,6 +2,7 @@
 date = '2025-04-16T23:43:40+02:00'
 title = 'Matej Mazur – Projects, community and open source'
 description = "Matej Mazur's portfolio: the COD3RS developer community, Hack Esbjerg, Y-A-S and open-source work such as Blazor.MapLibre."
+hero = 'hero-1'
 +++
 
 <div class="screen bg-intro bg-intro-bg1">
