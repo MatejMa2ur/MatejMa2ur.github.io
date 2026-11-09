@@ -87,11 +87,20 @@ body{
     border-top: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
 }
-.intro-content-text h2{
+.intro-content-text h1.display-1,
+.intro-content-text .slogan{
     font-size: 128px;
 }
+.intro-content-text .slogan{
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+.intro-content-text p:not(.slogan){
+    max-width: 500px;
+}
 @media (max-width: 576px) {
-    .intro-content-text h2{
+    .intro-content-text h1.display-1,
+    .intro-content-text .slogan{
         font-size: 56px;
     }
 }
@@ -452,6 +461,74 @@ div#projects-2 {
     }
     .project-meta-link,
     .index-row {
+        transition: none;
+    }
+}
+
+/* Home and About content sections (.panel). Bootstrap's dark/border utilities
+   read --bs-dark-rgb, which the theme above repoints at the accent colour, so
+   inside these flat panels they are pinned back to plain black/grey. */
+/* Panels hold more copy than fits one phone screen, so they grow instead of clipping. */
+.screen.panel {
+    height: auto;
+    min-height: 100vh;
+}
+.panel .text-dark {
+    color: #000 !important;
+}
+.panel .border-dark {
+    border-color: #000 !important;
+}
+.panel.bg-dark {
+    background-color: #222529 !important;
+}
+
+.brutalist-box {
+    border: 3px solid #000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.brutalist-box:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 #000;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0 #000;
+}
+
+.hover-scale {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+    transform: scale(1.1);
+}
+
+.mono-stack {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .stats-col,
+    .what-i-do-col {
+        border-right: none !important;
+        border-bottom: 3px solid currentColor;
+    }
+    .stats-col:last-child,
+    .what-i-do-col:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .brutalist-box,
+    .project-card,
+    .hover-scale {
         transition: none;
     }
 }

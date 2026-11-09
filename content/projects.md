@@ -12,7 +12,7 @@ scene = true
             <div class="col-sm-6 px-sm-5 px-4 d-flex align-items-end">
                 <div class="intro-content-text">
                     <span class="text-white display-3">I was always interested in creating new things, here I share some of them with you.</span>
-                    <h2 class="rubik display-1" style="color: #FF7B3E">Projects</h2>
+                    <h1 class="rubik display-1" style="color: #FF7B3E">Projects</h1>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@ scene = true
                 <div class="d-flex flex-column gap-4">
                     <a href="/projects/"
                        class="b">Projects</a>
-                    <a href="https://mmlw.net"
+                    <a href="https://mmlw.net/"
                        class="b">Blog <i class="bi bi-arrow-up-right"></i></a>
                     <a href="/about-me/"
                        class="b">About Me</a>
