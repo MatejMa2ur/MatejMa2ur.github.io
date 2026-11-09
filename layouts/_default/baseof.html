@@ -45,26 +45,35 @@
     {{ if .Params.scene }}<script src="/js/projects-scene.js" type="module"></script>{{ end }}
 
     <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "{{ site.Params.author }}",
-      "url": "{{ site.BaseURL }}",
-      "sameAs": [
-        "{{ site.Params.social.github }}",
-        "{{ site.Params.social.linkedin }}"
-      ],
-      "jobTitle": "Developer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "{{ site.Params.author }}'s Portfolio"
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ .Permalink }}"
-      }
-    }
-    </script>
+    {{- $person := dict
+        "@type" "Person"
+        "@id" (print site.Home.Permalink "#person")
+        "name" site.Params.author
+        "url" site.Home.Permalink
+        "image" (index site.Params.images 0 | absURL)
+        "sameAs" (slice site.Params.social.blog site.Params.social.github site.Params.social.linkedin) }}
+    {{- $website := dict
+        "@type" "WebSite"
+        "@id" (print site.Home.Permalink "#website")
+        "url" site.Home.Permalink
+        "name" site.Title
+        "inLanguage" "en"
+        "publisher" (dict "@id" (print site.Home.Permalink "#person")) }}
+    {{- $page := dict
+        "@type" (cond (eq .RelPermalink "/about-me/") "ProfilePage" "WebPage")
+        "@id" .Permalink
+        "url" .Permalink
+        "name" .Title
+        "isPartOf" (dict "@id" (print site.Home.Permalink "#website")) }}
+    {{- if eq .RelPermalink "/about-me/" }}{{ $page = merge $page (dict "mainEntity" (dict "@id" (print site.Home.Permalink "#person"))) }}{{ end }}
+    {{- $graph := slice $person $website $page }}
+    {{- if and (not .IsHome) (ne .Kind "404") }}
+    {{- $graph = $graph | append (dict
+        "@type" "BreadcrumbList"
+        "itemListElement" (slice
+            (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.Home.Permalink)
+            (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink))) }}
+    {{- end }}
+    <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
 </body>
 </html>
